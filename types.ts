@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { ReactThreeFiber } from '@react-three/fiber';
+import { ThreeElements } from '@react-three/fiber';
 
 export interface DualPosition {
   tree: [number, number, number];
@@ -23,6 +23,6 @@ export interface CalibrationSettings {
 
 declare global {
   namespace JSX {
-    interface IntrinsicElements extends ReactThreeFiber.IntrinsicElements {}
+    interface IntrinsicElements extends ThreeElements {}
   }
 }
